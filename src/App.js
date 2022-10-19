@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { Search } from './components/Search';
 import { Videos } from './components/Videos';
+import { API } from './Api';
 
 function App() {
 
@@ -9,7 +10,6 @@ function App() {
   const [text, setText] = useState();
   const [maxResults, setMaxResults] = useState("25");
   const [err, setErr] = useState(false);
-  const API = "AIzaSyC1AV-Af4b-VkLMjIgFatQwvbDtZ1_KyBg";
 
   const getData = (e) => {
     if (e && e.preventDefault) { e.preventDefault(); }
